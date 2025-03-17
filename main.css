@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+body {
+	font-family: Arial;
+    background-color: #0091ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wrapper {
+    width: 80%;
+}
+#header {
+    background-color: #777777;
+    color: greenyellow;
+    overflow: auto;
+    text-align: center;
+    font-family: Freestyle Script;
+}
+#nav {
+    background-color: #777777;
+    text-align: center;
+    overflow: auto;
+}
+#nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+    text-align: center;
+}
+#nav li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: none;
+}
+#nav li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#nav li a:hover {
+    color: #DDCCCC;
+}
+#main {
+    background-color: #FFFFFF;
+    color: #777777;
+    overflow: auto;
+    padding: 20px;
+}
+#main_grid {
+    background-color: #FFFFFF;
+    color: #777777;
+    overflow: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto auto;
+    grid-template-areas: ". . . ."
+                        "item1       item2       item3       item4";
+    grid-column-gap: 20px;
+}
+#main_grid2 {
+    background-color: #FFFFFF;
+    color: #777777;
+    overflow: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto auto;
+    grid-template-areas: ". . . ."
+                        "table       table       item1       .";
+    grid-column-gap: 20px;
+}
+#lot {
+    background-image: url(imagejpeg_1.jpg);
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50vh;
+    float: right;
+}
+#item1 {
+    grid-area: item1;
+    width: 200px;
+    height: 300px;
+}
+#item1 > div {
+    background-image: url(./2010_chevy_hhr/IMG_0340.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 80%;
+}
+#item2 {
+    grid-area: item2;
+    width: 200px;
+    height: 300px;
+}
+#item2 > div {
+    background-image: url(./2010_chevy_hhr/IMG_0340.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 80%;
+}
+#item3 {
+    grid-area: item3;
+    width: 200px;
+    height: 300px;
+}
+#item3 > div {
+    background-image: url(./2010_chevy_hhr/IMG_0340.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 80%;
+}
+#item4 {
+    grid-area: item4;
+    width: 200px;
+    height: 300px;
+}
+#item4 > div {
+    background-image: url(./2010_chevy_hhr/IMG_0340.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 80%;
+}
+#table {
+    grid-area: table;
+}
+#address {
+    margin-bottom: 10px;
+}
+#footer {
+    background-color: #777777;
+    color: greenyellow;
+    overflow: auto;
+    text-align: center;
+}
+.italic {
+    font-style: italic;
+}
+.small {
+    font-size: small;
+}
