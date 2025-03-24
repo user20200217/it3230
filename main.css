@@ -63,9 +63,9 @@ body {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: auto auto;
-    grid-template-areas: ". . . ."
-                        "item1       item2       item3       item4";
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "h2 h2 h2 h2"
+                        "item1 item2 item3 item4";
     grid-column-gap: 20px;
 }
 #main_grid2 {
@@ -75,10 +75,37 @@ body {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: auto auto;
-    grid-template-areas: ". . . ."
-                        "table       table       item1       .";
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "h2 h2 h2 h2"
+                        "table item1 . .";
     grid-column-gap: 20px;
+}
+#main_grid3 {
+    background-color: #FFFFFF;
+    color: #777777;
+    overflow: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "h2 h2 h2 h2"
+                        ". . . .";
+    grid-column-gap: 20px;
+}
+#main_grid4 {
+    background-color: #FFFFFF;
+    color: #777777;
+    overflow: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "h2 h2 h2 h2"
+                        "table2 address2 map map";
+    grid-column-gap: 20px;
+}
+h2 {
+    grid-area: h2;
 }
 #lot {
     background-image: url(imagejpeg_1.jpg);
@@ -139,8 +166,28 @@ body {
 #table {
     grid-area: table;
 }
-#address {
+#table > table {
+    color: #777777;
+}
+#table2 {
+    grid-area: table2;
+}
+#table2 > table {
+    color: #777777;
+}
+#address {  
     margin-bottom: 10px;
+}
+#address2 {
+    grid-area: address2;
+}
+#map {
+    grid-area: map;
+}
+#map > iframe {
+    height: 500px;
+    width:  500px;
+    border: 0;
 }
 #footer {
     background-color: #777777;
