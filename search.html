@@ -1,5 +1,17 @@
+<!--
+IT 3230
+Kai Chi
+Apr 6, 2025
+-->
+
+<!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="main.css">
+    <head>
+        <meta charset="utf-8">
+        <title>Search</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="logo.png">
+    </head>
     <body>
         <div id="wrapper">
             <div id="header">
@@ -13,13 +25,22 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div id="main">
+            <div id="main_grid3">
                 <h2>Search</h2>
-                <form method="post" action="results.php">
-                    <p>Year: <input type="number" name="year" required></p>
-                    <p>Make: <input type="text" name="make" required></p>
-                    <p>Model: <input type="text" name="model" required></p>
-                    <input type="reset" value="Reset"><input type="submit" value="Submit">
+                <form id="search1" method="post" action="results.php">
+                    <fieldset>
+                        <p>Year: <input type="number" name="year" required></p>
+                        <p>Make: <input type="text" name="make" required></p>
+                        <p>Model: <input type="text" name="model" required></p>
+                        <input type="reset" value="Reset"><input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+                <form id="search2" method="post" action="results.php">
+                    <fieldset>
+                        <p>Min Price: <input type="number" name="min_price" required></p>
+                        <p>Max Price: <input type="number" name="max_price" required></p>
+                        <input type="reset" value="Reset"><input type="submit" value="Submit">
+                    </fieldset>
                 </form>
             </div>
             <div id="footer">
